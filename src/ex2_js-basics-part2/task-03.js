@@ -15,8 +15,7 @@ const functionNumber = (arr) => {
     }
   }
 
-  const result = [sumEven, sumOdd, sumNull];
-  return result;
+  return [sumEven, sumOdd, sumNull];
 };
 
 module.exports = functionNumber;

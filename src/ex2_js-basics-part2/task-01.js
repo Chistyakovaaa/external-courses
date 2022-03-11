@@ -3,8 +3,8 @@ const functionTypeOf = (a) => {
     return 'string';
   } if (typeof a === 'number') {
     return 'number';
-  } if (a === 'Null') {
-    return 'undefined';
+  } if (a === 'NaN') {
+    return undefined;
   }
   return undefined;
 };
