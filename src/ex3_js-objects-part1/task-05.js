@@ -1,5 +1,4 @@
-const copyObject = (obj) => {
-  const copy = {};
-  return Object.assign(copy, obj);
-};
+function copyObject(obj) {
+  return JSON.parse(JSON.stringify(obj));
+}
 module.exports = copyObject;
