@@ -1,7 +1,2 @@
-const findSubstr = (str, substr) => {
-  if (str.includes(substr)) {
-    return true;
-  }
-  return false;
-};
+const findSubstr = (str, substr) => (str.includes(substr));
 module.exports = findSubstr;
