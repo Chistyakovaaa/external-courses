@@ -1,0 +1,36 @@
+h1{
+    background-color: rgba(83, 103, 122,.2);
+}
+div {
+   background-color: #ADD7FF; 
+}
+
+.name {
+    background-color: #648cb1;
+}
+
+.text {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/152/230/original/vector-hand-drawn-clouds.jpg);
+    background-size: 100% auto;
+}
+
+img {
+    border: 1px solid gray;
+    width: 220px;
+    height: 150px;
+}
+
+ol li {
+    color: #0A2DF5 ;
+}
+
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+}
+
+.paragraph {
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+    word-spacing: 10px;
+}
