@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 2</title>
+    <style>
+        input {
+            margin-left: 5px;
+        }
+
+        .title{
+            height: 140px;
+            margin-left: 5px;
+        }
+
+        .title option{
+            padding-left: 15px;
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        .buttons button[type="reset"]{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://httpbin.org/get" method="get">
+        <fieldset>
+        <legend>Personal data</legend>
+           <p> <label>Surname<input id="surname" type="text"></label></p>
+           <p><label>First Name<input id="firstname" type="text"></label></p>
+           <p><label>Middle name<input id="middlename" type="text"></label></p>
+           <p><label>You are
+               <input type="radio" name="gender" value="male" id="male"> male
+               <input type="radio" name="gender" value="female"  id="female"> female
+            </label></p>
+            <p><label>Age<input id="age" type="number" min="18" max="101"></label></p>
+            <p><label>Country of Residence
+                <select name="select">
+                    <option value="value" selected disabled></option>
+                    <option value="Italy">Italy</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Russia">Russia</option>
+                  </select>
+            </label></p>
+            <p><label>City
+                <input type="checkbox" name="ryazan" id="ryazan"> Ryazan
+                <input type="checkbox" name="moscow" id="moscow"> Moscow
+             </label></p>
+             <p><label>Photography<input name="photo" type="file"></label></p>
+             <hr>
+             <p><label>Title<select multiple class="title">
+                <optgroup label="Technologies"></optgroup>
+                <option value="Web Master">Web Master</option>
+                <option value="Database Administrator">Database Administrator</option>
+                <option value="Computer-aided design">Computer-aided design</option>
+                <optgroup label="Finance"></optgroup>
+                <option value="Economic Planning">Economic Planning</option>
+                <option value="Management accounting">Management accounting</option>
+                <option value="Budgeting and planning">Budgeting and planning</option>
+             </select></label></p>
+             <p><label>Salary<input name="salary" type="range"></label></p>
+             <p><textarea cols="60" rows="10" name="about" placeholder="Tell us about yourself..."></textarea></p>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <p><label>Site<input name="site" type="url"></label></p>
+            <p><label>Email<input name="email" type="email"></label></p>
+            <p><label>Phone<input name="phone" type="tel"></label></p>
+        </fieldset>
+            <p><label>Password<input name="password" type="password" required></label></p>
+    </form>
+    <div class="buttons">
+        <form action="http://httpbin.org/post" method="post">
+            <button name="sent" value="sent">Отправить</button>
+        </form>
+        <button type="reset">Сбросить</button>
+    </div>
+</body>
+</html>

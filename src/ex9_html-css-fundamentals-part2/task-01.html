@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 01 - img</title>
+    <style>
+        .img__1 {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .img__2 {
+            width: 200px;
+            height: auto;
+            clip-path: polygon(23% 5%, 88% 0, 100% 100%, 9% 100%);
+        }
+
+        .img__3{
+            width: 300px;
+            height: 300px;
+        }
+
+        .third__picture, .third__picture div {
+            transform-origin: 50% 50%;
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+        }
+
+        .third__picture {
+            margin-top: 30px;
+            width: 325px;
+            height: 230px;
+        }
+
+        .third__picture div {
+            width: 100%;
+            height: 100%;
+        }
+
+        .third__picture {
+            transform: rotate(120deg);
+        }
+
+        .picture {
+            transform: rotate(-60deg);
+        }
+
+        .picture__div {
+            transform: rotate(-60deg);
+        } 
+    </style>
+</head>
+<body>
+    <img src="https://wallbox.ru/resize/1024x1024/wallpapers/main/201547/9dbdf1269bf5a53.jpg" alt="cat" class="img__1">
+    <img src="https://trikky.ru/wp-content/blogs.dir/1/files/2019/01/24/koty-zhivotnye-665.jpg" alt="cat" class="img__2">
+<div class="third__picture">
+    <div class="picture">    
+        <div class="picture__div">
+            <img src="https://yt3.ggpht.com/a/AATXAJyMkMqrlmbDv68kmYFEqGzk3tOjljG5csJnofwHog=s900-c-k-c0xffffffff-no-rj-mo" alt="cat" class="img__3">
+        </div>
+    </div>
+</div> 
+</body>
+</html>
