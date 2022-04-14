@@ -1,0 +1,29 @@
+.table_customer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(87, 97, 117);
+    border: 2px solid #fff;
+    text-align: center;
+    width: 600px;
+    height: 500px;
+}
+
+tr {
+    padding: 15px 10px;
+    
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(223, 238, 250);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(200, 218, 233);
+}
+
+#head {
+    height: 20px;
+    padding: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
