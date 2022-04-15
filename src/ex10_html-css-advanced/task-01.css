@@ -1,0 +1,106 @@
+body, div {
+    display: flex;
+}
+
+body {
+    background-color: rgb(191, 224, 248);
+    margin: 0;
+    padding: 0;
+    flex-flow: column;
+    align-items: center;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, .1);
+    border-top: 10px solid #fff;
+    animation: animate 2s infinite linear;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-20%, 50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-20%, 50%) rotate(360deg);
+    }
+}
+
+.ball_wall {
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: center; 
+    margin-top: 80px;
+    width: 200px;
+    height: 250px; 
+}
+
+.wall {
+    background-color: rgb(139, 200, 83);
+    width: 150px;
+    height: 30px;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 186, 216);
+    animation: jump 2s infinite linear;
+}
+
+@keyframes jump {
+    0% { 
+        transform: translateY(0px); 
+    }
+    25% { 
+        transform: translateY(-70px); 
+    }
+    75% { 
+        transform: translateY(70px); 
+    }
+  }
+
+.infinity {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #4f0b4a, #97188e, #e624d9);
+    animation: changes 5s infinite linear;
+}
+
+@keyframes changes {
+    10% {
+        border-radius: 50%;
+    }
+    15% {
+        border-radius: 0%;
+    }
+    25% {
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(to top, #756d0f, #dfcf21, #f9e82e); 
+        clip-path: unset;
+    }
+    45% {
+        width: 130px;
+        height: 130px; 
+        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 
+        75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        transform: rotate(0deg);
+    }
+
+    65% {
+        transform: rotate(180deg); 
+    }
+
+    90% {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(to top, #4f0b4a, #97188e, #e624d9);
+    }
+}
