@@ -1,5 +1,5 @@
 let offset = 0;
-const sliderLine = document.querySelector('.slider_line');
+const sliderLine = document.getElementById('line');
 
 const img = [
   'asset/spring.jpg',
@@ -18,7 +18,7 @@ img.forEach((elem) => {
   sliderLine.appendChild(image);
 });
 
-document.querySelector('#right_butt').addEventListener('click', () => {
+document.getElementById('right_butt').addEventListener('click', () => {
   offset += imgWidth;
   if (offset > imgWidth * (imgLength - 1)) {
     offset = 0;
@@ -26,7 +26,7 @@ document.querySelector('#right_butt').addEventListener('click', () => {
   sliderLine.style.left = `${-offset}px`;
 });
 
-document.querySelector('#left_butt').addEventListener('click', () => {
+document.getElementById('left_butt').addEventListener('click', () => {
   offset -= 500;
   if (offset < 0) {
     offset = imgWidth * (imgLength - 1);
