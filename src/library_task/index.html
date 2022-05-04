@@ -9,36 +9,261 @@
 </head>
 <body>
 
-<header class="header">
+  <header class="header">
 
-  <ul class="support">
-    <li>
-      <a href="#">Help center</a>
-    </li>
-    <li>
-      <a href="#">Our support</a>
-    </li>
-  </ul>
-
-  <div class="profile">
-    <img src="https://d2iltjk184xms5.cloudfront.net/uploads/photo/file/297324/medium_a60213b395d3ff59bb09b829d11561b3-denton.jpg" alt="photo" class="avatar">
-    <span>John Doe</span>
-    <img src="assets/img/list.png" alt="list" class="list_profile">
-  </div>
+    <ul class="support">
+      <li>
+        <a href="#">Help center</a>
+      </li>
+      <li>
+        <a href="#">Our support</a>
+      </li>
+    </ul>
+  
+    <div class="profile">
+      <img src="https://d2iltjk184xms5.cloudfront.net/uploads/photo/file/297324/medium_a60213b395d3ff59bb09b829d11561b3-denton.jpg" alt="photo" class="avatar">
+      <span>John Doe</span>
+      <img src="assets/img/list.png" alt="list" class="list_profile">
+    </div>
 
 </header>
 
-<main>
+<aside class="menu">
+
+  <div class="add_book">
+    <button class="butt_add_book">
+      <img src="assets/img/plus.png" alt="plus" class="butt_add_book">
+      <span class="butt_add_book">add a book</span>
+    </button>
+  </div>
+
+  <nav class="main_nav">
+
+<a href="#" class="main_nav_a">
+  <div class="reading">
+    <img src="assets/img/now_reading.png" alt="reading" class="reading">
+    <span class="reading">Now reading</span>
+  </div>
+</a>
+
+<a href="#" class="main_nav_a">
+  <div class="browse">
+    <img src="assets/img/browse.png" alt="browse" class="browse">
+    <span class="browse">Browse</span>
+  </div>
+</a>
+
+<a href="#" class="main_nav_a">
+  <div class="buy_books">
+    <img src="assets/img/buy_book.png" alt="book" class="buy_books">
+    <span class="buy_books">Buy books</span>
+  </div>
+</a>
+
+<a href="#" class="main_nav_a">  
+  <div class="favorite">
+    <img src="assets/img/favorite.png" alt="favorite" class="favorite">
+    <span class="favorite">Favorite Books</span>
+  </div>
+</a>
+
+<a href="#" class="main_nav_a">  
+  <div class="wishlist">
+    <img src="assets/img/wishlist.png" alt="wishlist" class="wishlist">
+    <span class="wishlist">Wishlist</span>
+  </div>
+</a>
+
+<a href="#" class="main_nav_a">  
+  <div class="history">
+    <img src="assets/img/history.png" alt="history" class="history">
+    <span class="history">History</span>
+  </div>
+</a>
+
+</nav>
+
+  <div class="personal_categories">
+
+  <a href="#" class="main_nav_a">
+    <div class="must_read">
+      <img src="assets/img/circle-1.png" alt="must_read" class="must_read">
+      <span class="must_read">Must Read Title</span>
+    </div>
+  </a>  
   
+  <a href="#" class="main_nav_a">
+    <div class="best_of">
+      <img src="assets/img/circle-2.png" alt="best_of" class="best_of">
+      <span class="best_of">Best Of List</span>
+    </div>
+  </a>
+  
+  <a href="#" class="main_nav_a">
+    <div class="classic">
+      <img src="assets/img/circle-3.png" alt="classic" class="classic">
+      <span class="classic">Classic Novel</span>
+    </div>
+  </a>
+  
+  <a href="#" class="main_nav_a">
+    <div class="non_fiction">
+      <img src="assets/img/circle-4.png" alt="non_fiction" class="non_fiction">
+      <span class="non_fiction">Non Fiction</span>
+    </div>
+  </a>
+  </div>
+
+  <div class="history_list">
+
+    <div class="history_1">
+      <img src="assets/img/history.png" alt="history_1" class="history_1">
+      <p class="history_1">
+        You added <span>Fight Club</span> by <span>Chuck Palahniuk</span> to your <span>Must Read Titles</span>.
+      </p>
+      <p class="history_1" id="time_1">24 minutes ago</p>
+    </div>
+  
+    <div class="history_2">
+      <img src="assets/img/history.png" alt="history_2" class="history_2">
+      <p class="history_2">
+        You added <span>The Trial</span> by <span>Franz Kafka</span> to your <span>Must Read Titles</span>.
+      </p>
+      <p class="history_2" id="time_2">48 minutes ago</p>
+    </div>
+
+  </div>
+</aside>
+
+<main class="content">
+  <div class="books_header">
+
+    <p class="available_books">Browse Available Books</p>
+    
+    <nav class="books_nav">
+
+      <div class="books_butt">
+        <button class="books_nav_butt">All Books</button>
+			  <button class="books_nav_butt">Most Recent</button>
+			  <button class="books_nav_butt">Most popular</button>
+			  <button class="books_nav_butt">Free Books</button>
+      </div>
+
+      <form class="books-search-form">
+        <input type="text" class="search_books" placeholder="Enter Keywords"></input>
+        <button class="search_books_butt"></button>
+      </form>
+    </nav>
+  </div>
+
+  <div class="container">
+
+  <div class="books_wrapper">
+
+    <a href="#" class="book_link">
+      <div class="book">
+        <img src="assets/img/book-cover_1.png" alt="book" class="book_img">
+        <p class="title_book">Jewels of Nizam</p>
+        <p class="author">by Geeta Devi</p>
+        <img src="assets/img/all_stars.png" alt="stars" class="rating">
+      </div>
+    </a>  
+    
+    <a href="#" class="book_link">
+      <div class="book">
+        <img src="assets/img/book-cover_2.png" alt="book" class="book_img">
+        <p class="title_book">Cakes & Bakes</p>
+        <p class="author">by Sanjeev Kapoor</p>
+        <img src="assets/img/all_stars.png" alt="stars" class="rating">
+      </div>
+    </a>
+
+    <a href="#" class="book_link">
+      <div class="book">
+        <img src="assets/img/book-cover_3.png" alt="book" class="book_img">
+        <p class="title_book">Jemie's Kitchen</p>
+        <p class="author">by Jamie Oliver</p>
+        <img src="assets/img/half_stars.png" alt="stars" class="rating">
+      </div>
+    </a>
+
+    <a href="#" class="book_link">
+      <div class="book">
+        <img src="assets/img/book-cover_4.png" alt="book" class="book_img">
+        <p class="title_book">Inexpensive Family Meals</p>
+        <p class="author">by Simon Holst</p>
+        <img src="assets/img/empty_stars.png" alt="stars" class="rating">
+      </div>
+    </a>
+
+    <a href="#" class="book_link">
+      <div class="book">
+        <img src="assets/img/book-cover_5.png" alt="book" class="book_img">
+        <p class="title_book">Paleo Slow Cooking</p>
+        <p class="author">by Chrissy Gower</p>
+        <img src="assets/img/half_stars.png" alt="stars" class="rating">
+      </div>
+    </a>
+
+    <a href="#" class="book_link">
+      <div class="book">
+        <img src="assets/img/book-cover_6.png" alt="book" class="book_img">
+        <p class="title_book">Cook Like an Italian</p>
+        <p class="author">by Tobie Puttock</p>
+        <img src="assets/img/empty_stars.png" alt="stars" class="rating">
+      </div>
+    </a>
+
+    <a href="#" class="book_link">
+      <div class="book">
+        <img src="assets/img/book-cover_7.png" alt="book" class="book_img">
+        <p class="title_book">Suneeta Vaswani</p>
+        <p class="author">by Geeta Devi</p>
+        <img src="assets/img/all_stars.png" alt="stars" class="rating">
+      </div>
+    </a>
+
+    <a href="#" class="book_link">
+      <div class="book">
+        <img src="assets/img/book-cover_8.png" alt="book" class="book_img">
+        <p class="title_book">Jamie Does</p>
+        <p class="author">by Jamie Oliver</p>
+        <img src="assets/img/empty_stars.png" alt="stars" class="rating">
+      </div>
+    </a>
+
+    <a href="#" class="book_link">
+      <div class="book">
+        <img src="assets/img/book-cover_9.png" alt="book" class="book_img">
+        <p class="title_book">Jamie's Italy</p>
+        <p class="author">by Jamie Oliver</p>
+        <img src="assets/img/all_stars.png" alt="stars" class="rating">
+      </div>
+    </a>
+
+    <a href="#" class="book_link">
+      <div class="book">
+        <img src="assets/img/book-cover_10.png" alt="book" class="book_img">
+        <p class="title_book">Vegetables Cookbook</p>
+        <p class="author">by Matthew Biggs</p>
+        <img src="assets/img/empty_stars.png" alt="stars" class="rating">
+      </div>
+    </a>
+  </div>
+</div>
 </main>
 
 <footer class="footer">
-<div class="question">
-  <a href="#"><img src="assets/img/question.png" alt="question"></a>
-</div>
-<div class="setting">
-  <a href="#"><img src="assets/img/setting.png" alt="setting"></a>
-</div>
+
+  <div class="question">
+    <a href="#"><img src="assets/img/question.png" alt="question"></a>
+  </div>
+
+  <div class="setting">
+    <a href="#"><img src="assets/img/setting.png" alt="setting"></a>
+  </div>
+
 </footer>
+
 </body>
 </html>
