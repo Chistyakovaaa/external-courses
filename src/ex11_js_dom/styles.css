@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(218, 211, 203);
+}
+
+.slider {
+    width: 500px;
+    height: 300px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slider_line {
+    display: flex;
+    width: 2000px;
+    height: 300px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s; 
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.6;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    opacity: 1;
+}
+
+.button:focus{
+    outline: 1px solid rgb(114, 112, 112);
+    opacity: 1;
+}
+
+.block_button {
+    display: flex;
+    justify-content: center;
+}
+
+
+
