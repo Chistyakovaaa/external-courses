@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My library</title>
   <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="modal_window.css" type="text/css">
 </head>
 <body>
 
-  <header class="header">
+<header class="header">
 
     <ul class="support">
       <li>
@@ -30,14 +31,14 @@
 
 <aside class="menu">
 
-  <div class="add_book">
-    <button class="butt_add_book">
+<div class="add_book">
+  <button class="butt_add_book" id="butt_open_win">
       <img src="assets/img/plus.png" alt="plus" class="butt_add_book">
       <span class="butt_add_book">add a book</span>
-    </button>
-  </div>
+  </button>
+</div>
 
-  <nav class="main_nav">
+<nav class="main_nav">
 
 <a href="#" class="main_nav_a">
   <div class="reading">
@@ -143,10 +144,10 @@
     <nav class="books_nav">
 
       <div class="books_butt">
-        <button class="books_nav_butt">All Books</button>
-			  <button class="books_nav_butt">Most Recent</button>
-			  <button class="books_nav_butt">Most popular</button>
-			  <button class="books_nav_butt">Free Books</button>
+        <button class="books_nav_butt filter_onclick" id="all_books">All Books</button>
+        <button class="books_nav_butt">Most Recent</button>
+        <button class="books_nav_butt" id="most_popular">Most popular</button>
+        <button class="books_nav_butt">Free Books</button>
       </div>
 
       <form class="books-search-form">
@@ -155,102 +156,11 @@
       </form>
     </nav>
   </div>
-
+  
   <div class="container">
-
-  <div class="books_wrapper">
-
-    <a href="#" class="book_link">
-      <div class="book">
-        <img src="assets/img/book-cover_1.png" alt="book" class="book_img">
-        <p class="title_book">Jewels of Nizam</p>
-        <p class="author">by Geeta Devi</p>
-        <img src="assets/img/all_stars.png" alt="stars" class="rating">
-      </div>
-    </a>  
-    
-    <a href="#" class="book_link">
-      <div class="book">
-        <img src="assets/img/book-cover_2.png" alt="book" class="book_img">
-        <p class="title_book">Cakes & Bakes</p>
-        <p class="author">by Sanjeev Kapoor</p>
-        <img src="assets/img/all_stars.png" alt="stars" class="rating">
-      </div>
-    </a>
-
-    <a href="#" class="book_link">
-      <div class="book">
-        <img src="assets/img/book-cover_3.png" alt="book" class="book_img">
-        <p class="title_book">Jemie's Kitchen</p>
-        <p class="author">by Jamie Oliver</p>
-        <img src="assets/img/half_stars.png" alt="stars" class="rating">
-      </div>
-    </a>
-
-    <a href="#" class="book_link">
-      <div class="book">
-        <img src="assets/img/book-cover_4.png" alt="book" class="book_img">
-        <p class="title_book">Inexpensive Family Meals</p>
-        <p class="author">by Simon Holst</p>
-        <img src="assets/img/empty_stars.png" alt="stars" class="rating">
-      </div>
-    </a>
-
-    <a href="#" class="book_link">
-      <div class="book">
-        <img src="assets/img/book-cover_5.png" alt="book" class="book_img">
-        <p class="title_book">Paleo Slow Cooking</p>
-        <p class="author">by Chrissy Gower</p>
-        <img src="assets/img/half_stars.png" alt="stars" class="rating">
-      </div>
-    </a>
-
-    <a href="#" class="book_link">
-      <div class="book">
-        <img src="assets/img/book-cover_6.png" alt="book" class="book_img">
-        <p class="title_book">Cook Like an Italian</p>
-        <p class="author">by Tobie Puttock</p>
-        <img src="assets/img/empty_stars.png" alt="stars" class="rating">
-      </div>
-    </a>
-
-    <a href="#" class="book_link">
-      <div class="book">
-        <img src="assets/img/book-cover_7.png" alt="book" class="book_img">
-        <p class="title_book">Suneeta Vaswani</p>
-        <p class="author">by Geeta Devi</p>
-        <img src="assets/img/all_stars.png" alt="stars" class="rating">
-      </div>
-    </a>
-
-    <a href="#" class="book_link">
-      <div class="book">
-        <img src="assets/img/book-cover_8.png" alt="book" class="book_img">
-        <p class="title_book">Jamie Does</p>
-        <p class="author">by Jamie Oliver</p>
-        <img src="assets/img/empty_stars.png" alt="stars" class="rating">
-      </div>
-    </a>
-
-    <a href="#" class="book_link">
-      <div class="book">
-        <img src="assets/img/book-cover_9.png" alt="book" class="book_img">
-        <p class="title_book">Jamie's Italy</p>
-        <p class="author">by Jamie Oliver</p>
-        <img src="assets/img/all_stars.png" alt="stars" class="rating">
-      </div>
-    </a>
-
-    <a href="#" class="book_link">
-      <div class="book">
-        <img src="assets/img/book-cover_10.png" alt="book" class="book_img">
-        <p class="title_book">Vegetables Cookbook</p>
-        <p class="author">by Matthew Biggs</p>
-        <img src="assets/img/empty_stars.png" alt="stars" class="rating">
-      </div>
-    </a>
+      <section class="books_wrapper"></section>
   </div>
-</div>
+
 </main>
 
 <footer class="footer">
@@ -264,6 +174,7 @@
   </div>
 
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
