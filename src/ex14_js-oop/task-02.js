@@ -120,5 +120,5 @@ function allPower(obj) {
   console.log(`All power: ${power}`);
 }
 
-searchDevice(room, tv);
+searchDevice(room, 'tv');
 allPower(room);
